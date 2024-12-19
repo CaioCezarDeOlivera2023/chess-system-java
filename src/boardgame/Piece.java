@@ -1,6 +1,6 @@
 package boardgame;
 
-/*essa classe é uma classe interna do taubeilro onde apenas classes e subclasses dentro do mesmo pacote irão poder acessar
+/*essa classe é uma classe interna do tabuleiro onde apenas classes e subclasses dentro do mesmo pacote irão poder acessar
  * 
  */
 public class Piece {
