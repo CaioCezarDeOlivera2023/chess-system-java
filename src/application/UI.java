@@ -9,10 +9,7 @@ import chess.Color;
 
 public class UI {
 
-	/*
-	 * aqui esta imprimindo o layout do tabuleiro
-	 * 
-	 */
+	// aqui esta imprimindo o layout do tabuleiro
 	// https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
 
 	public static final String ANSI_RESET = "\u001B[0m";
@@ -33,6 +30,13 @@ public class UI {
 	public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+
+	// https://stackoverflow.com/questions/2979383/java-clear-the-console
+	//esse metodo esta fazendo ao limpeza do tabueliro para não ficar puluido no terminal
+	public static void clearScreen() {
+		System.out.print("\033[H\033[2J");
+		System.out.flush();
+	}
 
 	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
@@ -56,10 +60,8 @@ public class UI {
 		System.out.println("  a b c d e f h");
 	}
 
-	/*
-	 * aqui ele esta imprimindo uma peça do tabuleiro
-	 * 
-	 */
+	// aqui ele esta imprimindo uma peça do tabuleiro
+
 	private static void printPiece(ChessPiece piece) {
 		if (piece == null) {
 			System.out.print("-");
