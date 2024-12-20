@@ -23,7 +23,7 @@ public class ChessMatch {
 		}
 		return mat;
 	}
-	/* esse metodo será responsavel por iniciar a partida do chadres
+	/* esse metodo será responsavel por iniciar a partida do xadrez
 	 * 
 	 */
 	private void initialSetup() {
