@@ -24,7 +24,7 @@ public abstract class Piece {
 		return possibleMoves()[position.getRow()][position.getColumn()];// aqui esta dependendo do metodo abstrato acima
 	}
 
-	public boolean isThereanypossibleMoves() {//aqui esta chamando o metodo abstrado possiblemoves, onde ira retornar a matriz boleano.
+	public boolean isThereAnyPossibleMove() {//aqui esta chamando o metodo abstrado possiblemoves, onde ira retornar a matriz boleano.
 		boolean[][] mat = possibleMoves();//variavel auxiliar que ira receber as possiveis posições verdadeiras
 		for (int i=0; i<mat.length; i++) {
 			for(int j=0; j<mat.length; j++) {
